@@ -10,9 +10,6 @@ Author URI: https://wordpress.org/
 
 
 */
-
-
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
@@ -49,7 +46,8 @@ font-family: 'Red Hat Display';
 }
 
 html {
-	overflow-x: hidden
+	overflow-x: hidden;
+	
 }
 
 body {
@@ -141,8 +139,7 @@ a.toplogo img {
 	margin: 0;
 	transition: all 0.5s;
 	flex-shrink: 0;
-	width: 260px;
-	max-width: 260px;
+	width: 262px;
 }
 
 .topnavbar {
@@ -209,10 +206,10 @@ a.toplogo img {
     background: #00aeef;
     color: #fff;
     font-size: 22px;
-    border-radius: 5px;
+    border-radius: 35px;
     width: 200px;
     height: 70px;
-    line-height: 71px;
+    line-height: 65px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -220,6 +217,7 @@ a.toplogo img {
     display: inline-block;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
+    border: 4px solid #029ad3;
 }
 
 .customnav ul.topnavbarul li.last-item a:hover {
@@ -416,7 +414,7 @@ footer.site-footer {
 	}
 	.fixed-me ul.topnavbarul li.last-item a {
 		height: 50px;
-		line-height: 51px;
+		line-height: 45px;
 		text-align: center;
 		position: relative;
 		overflow: hidden;
@@ -435,6 +433,7 @@ footer.site-footer {
 		flex: 0 0 100%;
 		align-items: center
 	}
+	
 }
 
 #nav-icon1 {
@@ -540,14 +539,22 @@ footer.site-footer {
 }
 
 .bannercontent h1 {
-    font-size: 42px;
-    color: #222;
-    font-weight: 900;
-    text-transform: inherit;
-    margin: 0 0 25px 0;
-    font-family: 'Red Hat Display', sans-serif;
-    line-height: 1.5;
-    letter-spacing: 0;
+	font-size: 42px;
+	color: #000;
+	font-weight: 900;
+	text-transform: inherit;
+	margin: 0 0 30px 0;
+	font-family: 'Red Hat Display', sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+.bannercontent h1 small {
+	font-weight: 900;
+	font-size: 40px;
+}
+.bannercontent h1 span {
+	text-transform: uppercase;
+	color: #222;
 }
 .banner-text .banner-heading p {
 	font-size: 20px;
@@ -636,7 +643,7 @@ p.banner-subheading {
 	font-weight: 400;
 	line-height: 1.4;
 	padding-bottom: 0;
-	color: #222;
+	color: #000;
 	margin-bottom: 20px;
 	margin-top: 0;
 	font-family: 'Red Hat Display', sans-serif;
@@ -656,7 +663,7 @@ p.banner-subheading {
 .banner-content ul li {
 	padding: 0;
 	list-style: none;
-	color: #222;
+	color: #000;
 	font-size: 22px;
 	margin-bottom: 0;
 	font-weight: 400;
@@ -718,15 +725,15 @@ p.banner-subheading {
 }
 
 .banner-btn a.qualifybtn {
-    max-width: 605px;
+    max-width: 538px;
     width: 100%;
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
     background: #00aeef;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900 !important;
-    border-radius: 50px;
+    border-radius: 35px;
     height: auto;
     padding: 0;
     cursor: pointer;
@@ -790,15 +797,15 @@ p.banner-subheading {
 }
 
 .participant-text {
-    background-color: #02a185;
-    color: #222;
+	background-color: #f36f21;
+    color: #fff;
     height: auto;
-    line-height: 25px;
-    border-radius: 5px;
+    line-height: 28px;
+    border-radius: 10px;
     text-align: center;
     text-transform: uppercase;
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     max-width: 240px;
     margin: 0 auto;
     display: flex;
@@ -821,26 +828,93 @@ p.banner-subheading {
 	margin-top: 30px
 }
 
-#aboutStudy {
+#aboutWork {
 	padding: 74px 0;
+	border-top: 4px solid #00aeef;
 }
+#aboutStudy {
+	padding: 100px 0;
+}
+#aboutStudynew {
+	padding: 100px 0;
+}
+.new-tile-img-outer .row {
+	align-items: center;
+}
+.new-tile-img-outer .row .col-sm-4:nth-child(2) {
+	padding-left: 7px;
+	padding-right: 7px;
+	text-align: center;
+}
+
+.part-col-back {
+	background: #ee752b;
+	color: #fff;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 32.5px 17.8px;
+	max-width: 203px;
+	margin: 0 auto !important;
+	margin-bottom: 20px !important;
+}
+.new-tile-desc-outer h3 {
+	color: #222;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-bottom: 10px !important;
+	font-family: 'Red Hat Display', sans-serif;
+}
+.new-tile-desc-outer h3 span {
+	font-weight: 900;
+	display: block;
+	margin-bottom: 2px;
+	font-size: 24px;
+}
+ 
+#aboutStudynew .tile-section h2 {
+	margin-bottom: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #222;
+	line-height: 44px;
+	position: relative;
+}
+#aboutStudynew .tile-section h2::after {
+	content: '';
+	width: 29%;
+	height: 8px;
+	display: block;
+	background: #00aeef;
+	margin: 25px auto 0;
+	border-radius: 5px;
+}
+.aboutstudy-pic img {
+    border-radius: 10px;
+    border: 2px dashed #00aeef;
+}
+
+
+
 #aboutStudy .desktopView .col-sm-6 img{border-radius: 5px;}
 
-#aboutStudy h2 {
+#aboutStudy h2, #aboutWork h2 {
 	color: #222;
 	margin: 0 auto 41px auto
 }
 
-#aboutStudy h2 span {
+#aboutStudy h2 span, #aboutWork h2 span {
 	color: #00aeef;
 }
 
 .aboutContent h3 {
-	color: #0a0e29;
+	color: #00aeef;
 	font-size: 22px;
 	font-weight: bold;
 	line-height: 1.4;
-	margin-bottom: 10px !important;
+	margin-bottom: 22px !important;
 	font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -866,9 +940,9 @@ p.banner-subheading {
 }
 
 .takepart-study {
-    background: #ae71aa;
-    padding: 25px;
-    border-radius: 0;
+    background: #00aeef;
+    padding: 20px 25px;
+    border-radius: 10px;
     margin-top: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -882,16 +956,15 @@ p.banner-subheading {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border: 6px solid #0a0e29;
 }
 
 .takepart-study h3 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: normal;
-    margin: 0px 0 10px 0 !important;
-    line-height: 24px;
-    font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+	font-size: 21px;
+	font-weight: 900;
+	margin: 0px 0 15px 0 !important;
+	line-height: 1.2;
+	font-family: 'Red Hat Display', sans-serif;
 }
 
 .takepart-study h3::before {
@@ -910,7 +983,7 @@ p.banner-subheading {
     font-weight: bold;
     font-size: 21px !important;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-align: left;
     color: #fff;
 }
@@ -921,19 +994,19 @@ p.banner-subheading {
 	margin-top: 0;
 }
 .takepart-study ul {
-	margin: 6px 0 10px 0px;
+	margin: 6px 0 0px 0px;
 	padding: 0px;
 	list-style: none
 }
 
 .takepart-study ul li {
-    font-size: 17px;
-    color: #fff;
-    font-weight: 400;
-    position: relative;
-    padding-left: 22px;
-    margin-bottom: 2px;
-    line-height: 24px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	position: relative;
+	padding-left: 22px;
+	margin-bottom: 2px;
+	line-height: 27px;
 }
 .takepart-study ul li:last-child {
 	margin-bottom: 0px
@@ -1068,7 +1141,7 @@ p.banner-subheading {
 }
 
 .qualify-red-btn a.qualifybtn {
-	font-weight: 900;
+	font-weight: bold;
 }
 
 h2.mainheading {
@@ -1087,7 +1160,7 @@ h2.mainheading span {
 
 h2.mainheading:after {
 	background: #222;
-	width: 75%;
+	width: 90%;
 	content: "";
 	height: 1px;
 	margin: 14px auto 0;
@@ -1101,11 +1174,155 @@ h2.mainheading:after {
 	width: 37%
 }
 
+
+#aboutStudy .about-inner {
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+.tile-desc-outer {
+	padding: 30px 40px 30px 20px;
+}
+.tile-img-outer {
+	background: #f5f5f5;
+	padding: 30px;
+	border-radius: 10px;
+	height: 100%;
+}
+.tile-img-outer .col-sm-6:nth-of-type(2n) {
+	padding-left: 10px;
+}
+.tile-img-outer .col-sm-6:nth-of-type(2n+1) {
+	padding-right: 10px;
+}
+.tile-img-outer .last {margin-top: 20px;}
+#aboutStudy .tile-section h2 {
+	margin-bottom: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #194270;
+	line-height: 44px;
+	position: relative;
+}
+#aboutStudy .tile-section h2::after {
+	content: '';
+	width: 29%;
+	height: 8px;
+	display: block;
+	background: #00aeef;
+	margin: 25px auto 0;
+	border-radius: 5px;
+}
+.tile-section {
+	margin-top: 85px;
+}
+.tile-desc-outer h3 {
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 900;
+	color: #000;
+	margin-bottom: 22px;
+}
+.tile-desc-outer h3 span {
+	font-size: 44px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #00aeef;
+	margin-bottom: 20px;
+}
+.aboutStudyback::after {
+	content: '';
+	background: #00aeef;
+	width: 100%;
+	left: 0;
+	height: 4px;
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 72px;
+	z-index: -1;
+}
+.aboutStudyback {
+	position: relative;
+}
+.aboutpediatric {
+	background: #fff url('../images/about-img.jpg') no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 24px;
+}
+.aboutpediatric h2::after {
+	width: 90%;
+	background-color: #000000;
+	margin: 15px auto 0;
+}
+.card-body p:last-child, .faq-outer ul:last-child {
+	margin: 0;
+}
+.faq-outer .card-body p {
+	margin-bottom: 0;
+}
+#faq .card:last-child {
+	border-bottom: 2px solid #fff;
+}
+.faq-outer .card-header h5 span.exp-icon {
+	position: absolute;
+	right: 0px;
+	line-height: 1;
+	height: 20px;
+	width: 20px;
+	top: 50%;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0;
+}
+.faq-outer .card-header h5 span.exp-icon i {
+	color: #fff;
+	font-size: 18px;
+	line-height: 1;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	-webkit-transform: rotate(405deg);
+	-ms-transform: rotate(405deg);
+	transform: rotate(405deg);
+}
+.faq-outer .card-header h5.collapsed span.exp-icon i {
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
 #faq {
-	background: #ae71aa;
+	background: #00aeef;
 	width: 100%;
 	background-size: cover;
-	padding: 70px 0px 70px
+	padding: 70px 0px 80px
 }
 
 .faq-outer ul {
@@ -1152,15 +1369,17 @@ h2.mainheading:after {
 }
 
 #faq h2.mainheading {
-	margin-bottom: 59px;
+	margin-bottom: 60px;
 	color: #fff;
 	font-size: 50px;
-	padding: 0 15px
+	padding: 0 15px;
+	margin-left: auto;
+margin-right: auto;
 }
 
 #faq h2.mainheading:after {
 	background: #fff;
-	width: 100%;
+	width: 90%;
 }
 
 .dark-blue-color {
@@ -1190,10 +1409,15 @@ ul.points li {
 ul.points li:last-child {
 	margin-bottom: 0px
 }
-
+.qualify-red-btn {
+	margin: 30px auto 30px;
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+}
 @-moz-document url-prefix() { 
 .qualify-red-btn {
-    margin: 28px auto 0;
+	margin: 30px auto 30px;
 }
 }
 
@@ -1205,24 +1429,24 @@ ul.points li:last-child {
 }
 
 a.qualifybtn {
-    max-width: 100%;
-    width: auto;
-    text-align: center;
-    background: #fff;
-    color: #222;
-    font-size: 24px;
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: bold;
-    border-radius: 50px;
-    line-height: 1.2;
-    cursor: pointer;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    display: inline-block;
-    padding: 17px 30px;
-    border: 4px solid #029ad3;
+	max-width: 100%;
+width: auto;
+text-align: center;
+background: #00aeef;
+color: #fff;
+font-size: 18px;
+font-family: 'Red Hat Display', sans-serif;
+font-weight: bold;
+border-radius: 35px;
+cursor: pointer;
+margin: 0;
+  margin-top: 0px;
+position: relative;
+overflow: hidden;
+z-index: 1;
+display: inline-block;
+padding: 13.6px 30px;
+border: 4px solid #029ad3;
 }
 
 a.qualifybtn:hover {
@@ -1257,6 +1481,35 @@ a.qualifybtn:hover:before {
 	transform: scale3d(9, 9, 1)
 }
 
+
+.new-tile-desc-outer a.qualifybtn {
+	background: #fff;
+	color: #ee752b;
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 12px 14px;
+	border: 2px solid #ee752b;
+	height: 52px;
+	line-height: normal;
+	width: 100%;
+	max-width: 494px;
+}
+
+.new-tile-desc-outer a.qualifybtn:hover {
+    background: #ee752b;
+    color: #fff;
+}
+
+.new-tile-desc-outer a.qualifybtn::before {
+	background: #ee752b;
+}
+.new-tile-desc-outer p {
+    line-height: 24px;
+    font-size: 18px;
+}
+.new-tile-desc-outer .qualify-red-btn {
+    margin: 22px auto 24px;
+}
 .takepart .container {
 	position: relative
 }
@@ -1266,9 +1519,11 @@ a.qualifybtn:hover:before {
 }
 
 #faq .card {
-    background-color: #e1fffa;
-    margin-bottom: 30px;
-    border-radius: 10px;
+	background-color: transparent;
+	margin-bottom: 0;
+	border-top: 2px solid #fff;
+	padding: 25px 0 25px 60px;
+	position: relative;
 }
 .black-color {
 	color: #505456
@@ -1345,12 +1600,23 @@ a.faqbtn:hover:before {
 }
 
 .card-body p {
-	color: #222;
+	color: #fff;
 	font-size: 18px;
 	line-height: 28px;
 	    margin: 0;
 }
-
+.card::before {
+	counter-increment: my-sec-counter;
+	content: "0"counter(my-sec-counter);
+	position: absolute;
+	left: 0;
+	font-size: 30px;
+	color: #000000;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	top: 23px;
+}
 .faq-bg {
 	padding: 69px 0 80px 0;
 	background: #fff
@@ -1370,11 +1636,11 @@ a.faqbtn:hover:before {
 }
 
 .faq-outer .card-header h5 {
-    color: #ae71aa;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 18px 19px;
-    font-family: 'Red Hat Display', sans-serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
 	position: relative;
 }
 
@@ -1387,7 +1653,9 @@ a.faqbtn:hover:before {
 	border-radius: 0px;
 	margin: 0 0 0px
 }
-
+body {
+	counter-reset: my-sec-counter;
+}
 .faq-outer .card-body {
     background: transparent;
     color: #fff;
@@ -1395,8 +1663,7 @@ a.faqbtn:hover:before {
     font-size: 18px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: normal;
-    padding-top: 0px;
-    padding-bottom: 15px;
+    padding: 25px 0 0 0;
 }
 
 /*.faq-outer h5.mb-0:before {
@@ -1444,7 +1711,7 @@ a.faqbtn:hover:before {
 }*/
 .faq-outer .card-header h5 span.exp-icon {
     position: absolute;
-    right: 20px;
+    right: 0;
     line-height: 1;
     height: 20px;
     width: 20px;
@@ -1470,7 +1737,7 @@ a.faqbtn:hover:before {
     padding: 0;
 }
 .faq-outer .card-header h5 span.exp-icon i {
-    color: #ae71aa;
+    color: #000;
     font-size: 18px;
     line-height: 1;
     -webkit-transition: all 0.5s;
@@ -1499,13 +1766,15 @@ a.faqbtn:hover:before {
 
 #signup h2 {
 	padding-top: 72px;
-	margin-bottom: 33px;
+	margin-bottom: 60px;
 	color: #fff;
 	font-size: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.aboutpediatric h2 {
+	margin: 0 auto 59px;
+}
 #signup h2.mainheading::after {
 	background-color: #fff;
 	margin-top: 15px;
@@ -1539,7 +1808,6 @@ iframe {
 	padding-top: 0;
 	padding-bottom: 50px;
 	background-size: cover;
-	margin-bottom: 15px;
 }
 .topform label{color:#555557}
 #signup hr {
@@ -1587,6 +1855,43 @@ iframe {
 	line-height: 24px;
 	background-size: cover;
 }
+
+.about-listing {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.about-single-list {
+	max-width: 100%;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 48%;
+	flex: 0 0 48%;
+}
+#pediatricAbout ul {
+	margin: 0px 0 30px 0;
+	padding: 0px;
+	list-style: none;
+}
+#pediatricAbout ul li {
+	position: relative;
+	padding-left: 22px;
+	color: #222;
+	font-size: 18px;
+	line-height: 24px;
+}
+#pediatricAbout ul li .fas {
+	color: #00aeef;
+	font-size: 13px;
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+
 
 .studyabout h2 {
 	margin: 0 0 59px;
@@ -1877,15 +2182,14 @@ p.ulTitle {
 }
 
 .sources-box {
-    background-color: #c389dc;
-    border-radius: 0;
-    padding: 27px 26px;
-    font-family: 'Red Hat Display', sans-serif;
-    margin-top: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 100%;
-    border: 6px solid #7e4c98;
+	background-color: #029ad3;
+	border-radius: 15px;
+	padding: 22px 26px;
+	font-family: 'Red Hat Display', sans-serif;
+	margin-top: 30px;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 100%;
 }
 
 .sources-box strong {
@@ -2009,6 +2313,7 @@ footer.site-footer {
 	font-size: 16px;
 	line-height: 1.5;
 	font-weight: 400;
+	padding-right: 5px;
 }
  
 .footerBottom {
@@ -2087,16 +2392,7 @@ footer.site-footer {
     position: relative;
     z-index: 1;
 }
-.takepart-study::before, .sources-box::before, .participateStudy::before {
-    content: "";
-    z-index: -1;
-    border: 2px solid #7e4c98;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    right: 3px;
-    bottom: 3px;
-}
+
 
 .img-outer {
     text-align: center;
@@ -2157,14 +2453,14 @@ img.downarrow-position {
     font-weight: 900;
     margin: 0;
     font-size: 40px;
-    color: #0a0e29;
+    color: #000;
 }
 .left-cont, .right-cont {
     padding: 0 15px;
 }
 .site-footer img.autocruitment-logo {
     margin-bottom: 23px;
-    width: 260px;
+    max-width: 262px;
 }
 .footerBottom img.footer-logo {
     margin: 0;
@@ -2180,14 +2476,19 @@ img.downarrow-position {
     position: relative;
     z-index: 1;
 }
-#next-step::before {
-    content: url(../images/get-started-back.png);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-	z-index: -1;
+.right-cont .qualify-red-btn {
+	margin-top: 0;
 }
-
+.right-cont .qualify-red-btn a {
+	margin-top: 0;
+	background: #fff;
+	color: #222;
+	font-size: 24px;
+}
+.right-cont .qualify-red-btn a:hover {
+	color: #fff;
+	background: #0a0e29;
+}
 #last-step {
     background: #00aeef;
     padding: 40px 0;
@@ -2202,10 +2503,15 @@ img.downarrow-position {
 		display: -ms-flexbox!important;
 		display: flex!important;
 		-ms-flex-preferred-size: auto;
-		flex: 0 0 82%
+		flex: 0 0 75%
 	}
+	a.toplogo {
+	align-items: center;
+	margin-right: 0px;
+	flex: 0 0 25%;
+}
 	.navbar-me {
-		padding: 15px 90px;
+		padding: 14.5px 90px;
 	}
 	.banner-content ul li {
 		padding-left: 28px
@@ -2213,6 +2519,7 @@ img.downarrow-position {
 	.banner-content ul li ul {
 		padding-left: 0px
 	}
+
 }
 
 
@@ -2234,7 +2541,7 @@ img.downarrow-position {
 
 
 @media (min-width:1560px) {
-#aboutStudy .container {
+#aboutWork .container {
     max-width: 1500px;
 }	
 }
@@ -2290,7 +2597,7 @@ img.downarrow-position {
 		display: block
 	}
 	.banner-btn {
-		margin: 30px 0 0 0;
+		margin: 45px 0 0 0;
 padding-left: 0;
 margin-left: 0 !important;
 	}
@@ -2312,6 +2619,20 @@ margin-left: 0 !important;
 }
 
 @media only screen and (max-width:991px) {
+	.new-tile-desc-outer h3, .new-tile-desc-outer h3 span {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+.new-tile-desc-outer p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+}
+.part-col-back {
+	line-height: 25px;
+	padding: 27px 18px;
+}
 	#aboutStudy .aboutContent h3.aboutTitle {
 		font-size: 20px;
 		line-height: 24px;
@@ -2412,7 +2733,7 @@ margin-left: 0 !important;
     font-size: 20px;
 }
 .qualify-red-btn {
-	margin: 20px auto 0;
+	margin: 30px auto 30px;
 }
 .takepart-study ul li::before {
 	top: 7px;
@@ -2448,6 +2769,45 @@ margin-left: 0 !important;
 .left-cont p {
     margin: 0;
 }
+.card::before {
+	font-size: 26px;
+}
+.faq-outer .card-header h5 {
+	font-size: 18px;
+}
+#aboutStudy .tile-section h2 {
+	font-size: 22px;
+	line-height: 34px;
+}
+#aboutStudy .tile-section h2::after {
+	margin: 15px auto 0;
+}
+.tile-section {
+	margin-top: 40px;
+}
+.tile-img-outer .col-sm-6:nth-of-type(2n+1) {
+	text-align: right;
+}
+.tile-desc-outer, .tile-img-outer {
+	padding: 25px;
+}
+.tile-desc-outer h3 span {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.tile-desc-outer h3 {
+	font-size: 22px;
+	line-height: 28px;
+	margin-bottom: 12px;
+}
+.tile-desc-outer p {
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 0;
+}
+.tile-desc-outer .qualify-red-btn {
+	margin: 15px auto 0;
+}
 }
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
@@ -2468,9 +2828,9 @@ margin-left: 0 !important;
 		padding-right: 9px!important
 	}
 	.customnav ul.topnavbarul li.last-item a {
-		width: 100px;
+		width: 120px;
 		height: 50px;
-		line-height: 50px
+		line-height: 43px
 	}
 	
 	.faq-flow-diagram .pivotal-study p {
@@ -2485,7 +2845,16 @@ margin-left: 0 !important;
 	font-size: 18px;
 }
 .customnav ul.topnavbarul li a.nav-link {
-	font-size: 15px;
+	font-size: 14px;
+}
+.tile-desc-outer h3 {
+	font-size: 26px;
+	line-height: 34px;
+	margin-bottom: 18px;
+}
+.tile-desc-outer h3 span {
+	font-size: 36px;
+	margin-bottom: 15px;
 }
 }
 
@@ -2596,7 +2965,7 @@ margin-left: 0 !important;
 	
 	.customnav ul.topnavbarul li.last-item a { 
 		height: 50px;
-		line-height: 50px;
+		line-height: 45px;
 		font-size: 16px !important
 	}
 	.bannercontent {
@@ -2627,7 +2996,7 @@ margin-left: 0 !important;
 	#faq h2.mainheading,
 	.studyabout h2,
 	#signup h2,
-	.aboutDisease h2 {
+	.aboutDisease h2, .aboutpediatric h2 {
 		margin-bottom: 40px
 	}
 	#faq.faq-bg {
@@ -2668,6 +3037,10 @@ margin-left: 0 !important;
 		max-width: 100%;
 		flex: 0 0 100%
 	}
+	.col-md-6.pic-mob {
+		max-width: 100%;
+		flex: 0 0 100%
+	}
 	.aboutstudy-pic {
 		text-align: center
 	}
@@ -2699,8 +3072,8 @@ margin-left: 0 !important;
 		padding: 40px 15px 0
 	}
 	.body_section {
-		padding-top: 116px
-	}
+	padding-top: 84px;
+}
 	.navbarbtn {
 		position: relative;
 		top: -2px
@@ -2733,8 +3106,8 @@ margin-left: 0 !important;
 		color: #f3cb83
 	}
 	.bannercontent h1 span {
-	font-size: 22px;
-	letter-spacing: 2px;
+	font-size: 26px;
+	letter-spacing: 0;
 	display: block;
 	line-height: normal;
 }
@@ -2749,13 +3122,16 @@ margin-left: 0 !important;
 	#aboutStudy h2,
 	h2.heading,
 	#faq h2.mainheading,
-	#signup h2 {
+	#signup h2, #aboutWork h2 {
 		font-size: 32px
 	}
 	#aboutStudy {
 		padding: 40px 0
 	}
-	#aboutStudy h2 {
+	#aboutStudynew {
+	padding: 40px 0;
+}
+	#aboutStudy h2, #aboutWork h2 {
 		margin-bottom: 30px
 	}
 	.takepart,
@@ -2793,7 +3169,7 @@ margin-left: 0 !important;
 		top: -42px
 	}
 	.customnav {
-		padding: 22px 15px !important;
+		padding: 6px 15px !important;
 	}
 	.topnavbarul {
 		margin-top: 20px
@@ -2811,9 +3187,10 @@ margin-left: 0 !important;
 	.banner-btn a.qualifybtn {
 		margin: 0px
 	}
-	.faq-outer .card-body p {
-		font-size: 16px
-	}
+	.faq-outer .card-body p, #pediatricAbout p {
+	font-size: 16px;
+	line-height: 22px;
+}
 	.faq-outer ul li,
 	.studyaboutBox p,
 	.participateStudy li,
@@ -2846,7 +3223,8 @@ margin-left: 0 !important;
 		text-align: left!important
 	}
 	.aboutContent p {
-		text-align: center
+		text-align: center;
+		display: block;
 	}
 	.takepart-study p {
 		text-align: center
@@ -2879,14 +3257,14 @@ margin-left: 0 !important;
 		margin-left: 0px;
 		margin-top: 10px
 	}
-	#aboutStudy .desktopView .row {
+	#aboutStudynew .desktopView .row {
 		max-width: 580px;
 		margin: 0 auto
 	}
-	#aboutStudy .desktopView .row.nd-row {
+	#aboutStudynew .desktopView .row.nd-row {
 		margin-top: 30px
 	}
-	#aboutStudy .participant-text {
+	#aboutStudynew .participant-text {
 		max-width: 260px
 	}
 .banner-text p {
@@ -2937,10 +3315,14 @@ margin-left: 0 !important;
     display: none;
 }
 .participateStudy li i.fas, .takepart-study ul li .fas {
-    top: 5px;
+    top: 4px;
 }
-#faq .card {
-    margin-bottom: 15px;
+.new-tile-img-outer {
+	margin-top: 40px;
+}
+#aboutStudynew .tile-section h2 {
+	font-size: 22px;
+	line-height: 34px;
 }
 .bannercontent h4 {
     margin: 0 0 0 0;
@@ -2948,13 +3330,42 @@ margin-left: 0 !important;
 .bannercontent h1, .bannercontent h4, .banner-content p, .bannercontent h2 {
     margin: 0 0 15px 0;
 }
+.bannercontent h1 small {
+	font-size: 26px;
+}
+.right-cont .qualify-red-btn {
+	margin: 20px auto 0;
+}
+.right-cont .qualify-red-btn a {
+	font-size: 22px !important;
+	padding: 15px 30px;
+	line-height: normal;
+}
+.new-tile-desc-outer h3, .new-tile-desc-outer h3 span {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+}
+.new-tile-desc-outer p {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 22px;
+}
+.takepart-study {
+    margin-bottom: 30px;
+}
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
 	.footer-logo {
 		max-width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 42px;
 	}
+	.footerTop h3 span {
+	display: inline-block;
+	height: 30px;
+}
 	.footerBottom,
 	.footerBottom a {
 		font-size: 16px
@@ -2978,6 +3389,16 @@ margin-left: 0 !important;
 
 
 @media only screen and (max-width:767px) {
+	#aboutStudynew .tile-section h2 {
+	font-size: 18px;
+	line-height: 26px;
+}
+#aboutStudynew  .qualify-red-btn a {
+	font-size: 16px !important;
+	max-width: 100%;
+	width: auto;
+	padding: 10px 15px !important;
+}
 	.footerBottom {
 		text-align: center;
 	}
@@ -3020,22 +3441,22 @@ margin-left: 0 !important;
 		max-width: 338px
 	}
 	#faq h2.mainheading::after {
-		width: 80%
+		width: 90%
 	}
 	.footerBottom .col-md-4.text-right ul li {
 		text-align: center
 	}
-	#aboutStudy .participant-text {
+	#aboutStudynew .participant-text {
 		max-width: 225px;
 		height: auto;
 		font-size: 16px;
 	}
-	#aboutStudy .desktopView .col-sm-6 img {
+	#aboutStudynew .desktopView .col-sm-6 img {
 	height: auto;
 	width: 100%;
 }
 	.qualify-red-btn {
-		margin: 17px auto 0;
+		margin: 17px auto 30px;
 	}
 	.studyaboutBox .wd47 {
 		width: 100%;
@@ -3061,6 +3482,16 @@ margin-left: 0 !important;
 		margin: 0 auto 20px;
 		display: block;
 	}
+	.card::before {
+	font-size: 22px;
+	top: 24px;
+}
+a.toplogo img {
+	
+}
+#faq .card {
+	padding: 25px 0 25px 40px;
+}
 	.qualify-red-btn a {
 		line-height: inherit!important;
 		height: auto!important;
@@ -3137,7 +3568,10 @@ margin-left: 0 !important;
 		padding: 30px 0 0 0
 	}
 	.participant-text {
-		height: 284px
+		height: auto;
+		font-size: 16px;
+		padding:18px;
+		line-height:22px;
 	}
 	.qualify-red-btn img {
 		top: 0;
@@ -3189,6 +3623,22 @@ margin-left: 0 !important;
     width: 100%;
     margin: 10px 0 0 0;
 }
+.left-cont p span {
+    display: inline;
+}
+#aboutStudy .tile-section h2 {
+	font-size: 18px;
+	line-height: 26px;
+}
+.right-cont .qualify-red-btn a {
+	font-size: 20px !important;
+}
+.part-col-back {
+	word-break: break-word;
+	font-size: 16px;
+	line-height: normal;
+}
+
 }
 
 @media (min-width:480px) and (max-width:489px) {
@@ -3267,7 +3717,8 @@ margin-left: 0 !important;
     margin-bottom: 15px;
 }
 .takepart-study {
-    padding: 30px 20px;
+    padding: 20px 20px;
+	height: 100%;
 }
 .footerTop p {
     padding-right: 0;
@@ -3276,13 +3727,15 @@ margin-left: 0 !important;
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
 	.navbar-me {
-		padding: 20px 2vw 20px 2vw;
+		padding: 25px 2vw 25px 2vw;
 	}
 	.participant-text {
-		height: 278.4px;
-		max-width: 195px;
 		font-size: 16px;
-line-height: 24px;
+    max-width: 195px;
+    line-height: 22px;
+	}
+	.new-tile-desc-outer .qualify-red-btn a.qualifybtn {
+		padding: 15px 8px!important;
 	}
 	.bannercontent {
 		margin-top: 112px;
@@ -3299,13 +3752,33 @@ line-height: 24px;
 	}
 	.fixed-me ul.topnavbarul li.last-item a {
 	height: 40px !important;
-	line-height: 40px !important;
+	line-height: 33px !important;
+}
+.bannercontent h1 small {
+	font-size: 31px;
+}
+.banner-btn a.qualifybtn {
+	max-width: 100%;
+	font-size: 18px;
+	width: auto;
+	padding: 14px 30px;
 }
 }
 
 
 @media only screen and (max-width:575px) {
-	#aboutStudy .desktopView .col-sm-6 {
+	.participant-text{
+		font-size: 13px;
+		line-height: 16px;
+		padding: 15px 7px;
+		margin: 0 auto 16px;
+	}
+		.new-tile-img-outer .row .col-sm-4:nth-child(2) {
+			padding-left: 0px;
+			padding-right: 0px;
+			text-align: center;
+		}
+		#aboutStudynew .desktopView .col-sm-6 {
 		-webkit-box-flex: 0;
 		-ms-flex: 0 0 48%;
 		flex: 0 0 48%;
@@ -3318,12 +3791,42 @@ line-height: 24px;
 		align-items: center;
 		padding: 0px
 	}
-
-	#aboutStudy .desktopView .col-sm-6 img {
+	.tile-img-outer .col-sm-6 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%!important;
+		height: auto!important;
+		display: flex;
+	}
+	.new-tile-img-outer .col-sm-4 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+}
+	.tile-desc-outer h3 span {
+	font-size: 21px;
+}
+.tile-desc-outer h3 {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.tile-img-outer .col-sm-6:nth-of-type(2n+1) {
+	justify-content: flex-end;
+}
+.tile-img-outer {
+	padding: 20px;
+}
+.tile-img-outer .last {
+	margin-top: 15px;
+}
+#aboutStudynew .desktopView .col-sm-6 img {
 		max-width: none!important;
 		height: auto;
 	}
-	#aboutStudy .desktopView .row.nd-row {
+	#aboutStudynew .desktopView .row.nd-row {
 		margin-top: 7px!important
 	}
 	.volienter-section {
@@ -3344,6 +3847,12 @@ line-height: 24px;
 .left-cont h3 {
     font-size: 32px;
 }
+.new-tile-img-outer .col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
 }
 
 @media only screen and (min-width:992px) and (max-width:1300px) {
@@ -3354,7 +3863,7 @@ line-height: 24px;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
 .bannercontent {
-    background-position: right -230px top;
+    background-position: right -150px top;
 }
 }
 
@@ -3366,18 +3875,18 @@ line-height: 24px;
 
 @media only screen and (min-width:1200px) and (max-width:1441px) {
 .customnav ul.topnavbarul li a.nav-link {
-    font-size: 18px;
+    font-size: 17px;
 }	
 .navbar-nav li {
-    padding: 0 20px;
+    padding: 0 10px;
 }
-.customnav ul.topnavbarul li.last-item a {width: 155px;height: 60px;line-height: 60px;}
-.fixed-me ul.topnavbarul li.last-item a {height: 51px;line-height: 51px;}
+.customnav ul.topnavbarul li.last-item a {width: 155px;height: 60px;line-height: 55px;}
+.fixed-me ul.topnavbarul li.last-item a {height: 51px;line-height: 46px;}
 section.bannercontent {
-    margin-top: 114px;
+    margin-top: 105px;
 }
 .navbar-me {
-    padding: 21px 2vw;
+    padding: 16.5px 2vw;
 }
 }
 
@@ -3508,14 +4017,14 @@ screen and (-ms-high-contrast:none) and (max-width:767px) {
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
 	.bannercontent h1 {
-		font-size: 30px;
+		font-size: 37px;
 	}
 	.banner-heading span {
 	letter-spacing: 12px;
 }
 .banner-content ul li .fas {
 	font-size: 14px;
-	top: 8px;
+	top: 6px;
 }
 	.bannercontent h2 {
 		font-size: 17px;
@@ -3536,7 +4045,7 @@ screen and (-ms-high-contrast:none) and (max-width:767px) {
 		padding-left: 0;
 	}
 	.banner-btn {
-		margin: 15px auto 0;
+		margin: 35px auto 0;
 		width: 100%;
 	}
 	.banner-bottom {
@@ -3552,8 +4061,17 @@ line-height: 1.4;
 		top: 6px
 	}
 	.qualify-red-btn a.qualifybtn {
-		font-size: 15px
-	}
+	font-size: 16px;
+	padding: 10px 30px !important;
+	height: auto;
+	line-height: normal;
+}
+.tile-desc-outer {
+	padding: 30px 30px 30px 10px;
+}
+.tile-desc-outer p {
+	margin-bottom: 5px;
+}
 	.bannercontent h2 span {
 		padding: 0;
 		font-size: 21px
@@ -3590,7 +4108,7 @@ line-height: 1.4;
 }
 
 .bannercontent {
-    height: 590px;
+    height: 560px;
 }
 .navbar-expand-lg .navbar-nav.topnavbarul {
     -webkit-box-flex: 0;
@@ -3610,8 +4128,9 @@ img.uparrow-position, img.downarrow-position {
     right: -44px;
     width: 56px;
 }
+
 section.bannercontent {
-    margin-top: 112px;
+    margin-top: 107px;
 }
 .bannercontent h1, .bannercontent h4, .banner-content p {
     margin: 0 0 15px 0;
@@ -3621,6 +4140,14 @@ section.bannercontent {
 }
 .bannercontent h4.large-text {
     font-size: 22px;
+}
+a.toplogo img {
+	width: 200px;
+}
+.new-tile-img-outer .part-col-back {
+	padding: 27px 12px;
+	line-height: 24px;
+	font-size: 16px;
 }
 }
 
@@ -3637,8 +4164,8 @@ section.bannercontent {
 	margin-top: 12px;
 }
 .banner-btn {
-    margin: 30px 0 0;
-    text-align: center;
+    margin: 45px 0 0;
+    text-align: left;
 padding-left: 0;
 margin-left: 0;
 }
@@ -3650,7 +4177,7 @@ margin-left: 0;
     padding-bottom: 0;
 }
 .navbar-nav li {
-	padding: 0 30px;
+	padding: 0 17px;
 }
 }
 
@@ -3673,18 +4200,24 @@ margin-left: 0;
 
 @media only screen and (min-width:1200px) and (max-width:1441px) {
 	.bannercontent h1 {
-		font-size: 34px;
+		font-size: 42px;
 	}
+	.bannercontent h1 small {
+	font-size: 38px;
+}
+.tile-desc-outer h3 span {
+	font-size: 40px;
+}
 	.banner-text {
 		max-width: 700px
 	}
 	.bannercontent {
 		height: 640px;
 		margin-top: 101px;
-		background-position: top right -200px;
+		background-position: top right -120px;
 	}
 	.banner-btn {
-		margin: 20px 0 0;
+		margin: 30px 0 0;
 		width: 100%;
 	}
 	.banner-content p {
@@ -3696,13 +4229,13 @@ margin-left: 0;
 	margin-top: 13px;
 }
 .bannercontent h1, .bannercontent h4, .banner-content p, .bannercontent h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 25px 0;
 }
 }
 
 @media only screen and (min-width:1200px) and (max-width:1350px) {
 .banner-btn { 
-    margin: 20px 0 0;
+    margin: 30px 0 0;
 }
 .bannercontent {
     height: 600px;
@@ -3725,7 +4258,7 @@ margin-left: 0;
 
 @media only screen and (min-width:1200px) and (max-width:1260px) {
 .bannercontent {
-    background-position: top right -200px;
+    background-position: top right -90px;
 }
 }
 
@@ -3780,13 +4313,13 @@ screen and (-ms-high-contrast:none) and (min-width:768px) and (max-width:991px) 
 	.banner-content ul li ul {
 		padding-left: 10px;
 	}
-	div#aboutStudy .row .col-lg-3:nth-child(2) img.downarrow-position {
+	div#aboutWork .row .col-lg-3:nth-child(2) img.downarrow-position {
 		display: none;
 	}
 	.img-outer {
 		margin-bottom: 40px;
 	}
-	#aboutStudy {
+	#aboutWork {
 		padding: 40px 0 0;
 	}
 	img.uparrow-position {
@@ -3799,6 +4332,10 @@ screen and (-ms-high-contrast:none) and (min-width:768px) and (max-width:991px) 
 	.footerBottom .footer-logo.go-secured {
 		max-width: 126px;
 	}
+	.aboutpediatric {
+	padding: 40px 0;
+	background-image: none;
+}
 }
 
 @media only screen and (min-width:1200px) {
@@ -3808,7 +4345,7 @@ screen and (-ms-high-contrast:none) and (min-width:768px) and (max-width:991px) 
 	.flow-diagram {
 		margin-bottom: 30px
 	}
-	.takepart-study {min-height: 300px;}
+	.takepart-study {min-height: 304px;height: 100%;}
 	.site-footer .container {
 	max-width: 1500px;
 }
@@ -3819,7 +4356,7 @@ screen and (-ms-high-contrast:none) and (min-width:768px) and (max-width:991px) 
 
 @media only screen and (min-width:1600px) and (max-width:2000px) {
 	.bannercontent {
-		margin-top: 104px
+		margin-top: 101px
 	}
 }
 
@@ -3921,6 +4458,35 @@ img.uparrow-position {
 		padding: 0px!important;
 		margin-bottom: 30px!important;
 	}
+	.tile-img-outer .col-sm-6  {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%!important;
+		height: auto!important;
+		margin: 0px 0px!important;
+		margin-bottom: 20px!important;
+	}
+	.new-tile-img-outer .col-sm-4 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+}
+.new-tile-img-outer .row .col-sm-4:nth-child(2) {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	.tile-img-outer .col-sm-6:nth-of-type(2n+1), .tile-img-outer .col-sm-6:nth-of-type(2n) {
+       display: block;
+    padding-right: 15px;
+    text-align: center;
+    padding-left: 15px;
+}
+.tile-img-outer .col-sm-6:last-child {
+    margin-bottom: 0  !important;
+}
 	#aboutStudy .desktopView .col-sm-6 img {
 		max-width: 100%
 	}
@@ -3954,12 +4520,16 @@ img.uparrow-position {
 				flex: 0 0 100%;
 	}
 }
-@media only screen and (min-width:234px) and (max-width:319px) {
+@media only screen and (min-width:234px) and (max-width:350px) {
 a.toplogo img {
     max-width: 100%;
+    width: 150px;
+}
+.body_section {
+	padding-top: 83px;
 }
 .customnav {
-	padding: 29px 15px !important;
+	padding: 19px 15px !important;
 }
 .footerTop {
 	padding: 35px 0px;
@@ -3967,10 +4537,13 @@ a.toplogo img {
 }
 @media only screen and (max-width:233px) {
 a.toplogo img {
-    max-width: 100%;
+    max-width: 135px;
 }
 .customnav {
-    padding: 23px 15px;
+    padding: 20px 15px !important;
+}
+.body_section {
+    padding-top: 83px;
 }
 }
 
@@ -3996,11 +4569,12 @@ a.toplogo img {
 @media only screen and (min-width:480px) and (max-width:991px) {
 	.banner-btn a.qualifybtn {
 		font-weight: 500;
-		font-size: 16px
+		font-size: 18px !important;
 	}
 	.qualify-red-btn a {
 		font-weight: 500;
-		font-size: 22px !important;
+		font-size: 18px !important;
+padding: 10px 18px;
 	}
 	.aboutContent h3.aboutTitle span {
 		font-weight: 500;
@@ -4012,10 +4586,13 @@ a.toplogo img {
 	a.qualifybtn {
 		max-width: 460px;
 	}
+	.new-tile-desc-outer a.qualifybtn {
+		max-width: 450px;
+	}
 }
 
 @media (max-width:575px) {
-#aboutStudy .participant-text.col-sm-6 {
+	#aboutStudynew.participant-text.col-sm-6 {
 	font-size: 16px !important;
 	line-height: 24px !important;
 }
@@ -4025,23 +4602,40 @@ a.toplogo img {
 }
 
 @media only screen and (min-width:361px) and (max-width:380px) {
-#aboutStudy .participant-text.col-sm-6 {
-    font-size: 16px !important;
-	line-height: 24px !important;
+	#aboutStudynew .participant-text.col-sm-6 {
+    font-size: 15px !important;
+	line-height: 22px !important;
 }
 }
 
 
 @media only screen and (min-width:412px) and (max-width:575px) {
-	#aboutStudy .participant-text.col-sm-6 {
+	#aboutStudynew .participant-text.col-sm-6 {
 		font-size: 16px !important;
 	line-height: 24px !important;
 		    padding: 0 5px;
 	}
 }
 
+@media (max-width:360px) {
+#aboutStudynew .desktopView .col-sm-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%!important;
+    margin: 0 0 20px!important;
+}
+#aboutStudynew .participant-text.col-sm-6 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    padding: 50px 15px;
+}
+#aboutStudynew .desktopView .row.nd-row {
+    margin-top: 0px!important;
+}	
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	#aboutStudy .desktopView .col-sm-6 img {
+	#aboutStudynew .desktopView .col-sm-6 img {
 		max-width: 100%!important;
 	}
 
@@ -4050,7 +4644,9 @@ a.toplogo img {
 
 @media screen and (-ms-high-contrast:active),
 screen and (-ms-high-contrast:none) and (max-width:575px) {
-
+.tile-img-outer img {
+	width: 100%;
+}
 }
 
 @media screen and (-ms-high-contrast:active),
@@ -4139,6 +4735,23 @@ html.ie10 .participant-text div {
 	html.ie10 #aboutStudy .desktopView .col-sm-6 img {
 		max-width: 100%!important
 	}
+	.part-col-back {
+	font-size: 13px;
+	line-height: 16px;
+	padding: 15px 7px;
+	margin-bottom: 15px !important;
+	min-height: 160px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.new-tile-img-outer .row .col-sm-4:nth-child(2) {
+	padding-left: 0;
+	padding-right: 0;
+}
 }
 
 @media only screen and (min-width:768px) and (max-width:992px) {
@@ -4193,6 +4806,13 @@ screen and (-ms-high-contrast:none) and (min-width:992px) {
 	.follow-up-study p {
 		font-size: 13px!important
 	}
+
+.tile-img-outer {
+	padding: 15px;
+}
+.tile-desc-outer {
+	padding: 20px;
+}
 }
 
 @media only screen and (max-width:400px) {
@@ -4335,7 +4955,8 @@ html.ie10 .bannerRight {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 .footerTop h3 {
-    height: auto;
+	height: 44px;
+	margin-bottom: 15px;
 }
 .footerBottom, .footerBottom a {
     font-size: 12px;

@@ -19,20 +19,16 @@ get_header();
 
 					<div id="body_section" class="body_section">
 						<!-- Banner Section -->
-						<section id="banner" class="container-fluid px-0 bannercontent">
+						<section id="banner" style="background-image:'url('<?php echo get_stylesheet_directory_uri(); ?>/images/banner-bg.jpg')" class="container-fluid px-0 bannercontent">
 
 							<div class="banner-text">
-								<h1><small>A Clinical Study<br> for Children & Teens Dealing with</small><br> <span>ANEMIA</span></h1>
+								<h1><?php the_field('banner_heading')?></h1>
 								
 								<div class="banner-content">
-									<p class="custm-font">You or your child may qualify for a clinical research study if the potential participant:</p>
-									<ul>
-										<li><i class="fas fa-check-circle"></i> is between 2 and 17 years old</li>
-										<li><i class="fas fa-check-circle"></i> have anemia caused by low iron levels</li>
-										<li><i class="fas fa-check-circle"></i> has trouble taking iron tablets, or the iron tablets do not work as well as they should</li>
-									</ul>
+									<p class="custm-font"><?php the_field('banner_content')?></p>
+									
 								</div>
-								<div class="banner-btn"><a href="#signup" class="qualifybtn btnscroll">GET STARTED – SEE IF YOU QUALIFY</a></div>
+								<div class="banner-btn"><a href="#signup" class="qualifybtn btnscroll"><?php the_field('banner_button_text');?></a></div>
 							</div>
 						</section>
 						<!-- Banner Section - END -->
@@ -42,22 +38,12 @@ get_header();
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="new-tile-desc-outer">
-						<h3 class="aboutTitle">Would you or your child like to take part in a Clinical Trial for a new investigational treatment for anemia at no cost to you?</h3>
-						<p>No health insurance is required to participate. You will receive all study related care from a specialist physician at no cost. The study will include visits to a clinic in your location.
-<br><br>
-Participants will receive compensation for participating in the study.</p>
+						<h3 class="aboutTitle"><?php the_field('about_heading')?></h3>
+						<p><?php the_field('about_content')?></p>
 						
-						<div class="qualify-red-btn"> <img src="images/red-up-arrow.png"> <a href="#signup" class="qualifybtn btnscroll">See if you qualify – Complete the questionnaire</a></div>
+						<div class="qualify-red-btn"> <img src="images/red-up-arrow.png"> <a href="#signup" class="qualifybtn btnscroll"><?php the_field('about_button_content')?></a></div>
 
-						<div class="takepart-study">
-									<p>You or your child may qualify for a clinical research study if the potential participant:</p>
-									<ul>
-										<li><i class="fas fa-check-circle"></i> is between 2 and 17 years old</li>
-										<li><i class="fas fa-check-circle"></i> have anemia caused by low iron levels</li>
-										<li><i class="fas fa-check-circle"></i> has trouble taking iron tablets, or the iron tablets do not work as well as they should</li>
-									</ul>
-									
-								</div>
+						
 					</div>
 
 					</div>
@@ -65,13 +51,13 @@ Participants will receive compensation for participating in the study.</p>
 						<div class="col-md-12">
 							<div class="row">
 								<div class="col-md-6 col-sm-6 participant-text">
-									<div>VOLUNTEERS WHO TAKE PART IN THE STUDY WILL BE COMPENSATED PER VISIT FOR TIME AND TRAVEL.</div>
+									<div><?php the_field('box1_content')?></div>
 								</div>
-								<div class="col-md-6 col-sm-6"><img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-1.png" src="images/member-1.png"></div>
+								<div class="col-md-6 col-sm-6"><img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-1.png" src="<?php the_field('box_image1')?>"></div>
 							</div>
 							<div class="row nd-row">
-								<div class="col-md-6 col-sm-6 mb30"> <img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-2.png" src="images/member-2.png"></div>
-								<div class="col-md-6 col-sm-6"><img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-3.png" src="images/member-3.png"></div>
+								<div class="col-md-6 col-sm-6 mb30"> <img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-2.png" src="<?php the_field('box_image2')?>"></div>
+								<div class="col-md-6 col-sm-6"><img alt="Participate" class="lazypreload lazyloaded" data-src="images/member-3.png" src="<?php the_field('box_image3')?>"></div>
 							</div>
 						</div>
 					</div>
@@ -84,44 +70,39 @@ Participants will receive compensation for participating in the study.</p>
 		<!-- About work -->
 		<div id="aboutWork" class="container-fluid px-0">
 							<div class="container">
-								<div class="section-head text-center"><h2 class="mainheading">How Does It <span>Work?</span></h2></div>
+								<div class="section-head text-center"><h2 class="mainheading"><?php the_field('second_about_section_heading')?></h2></div>
 								<div class="row">
-									<div class="col-lg-3 col-sm-6">
-										<div class="img-outer">
-											<div class="img-wrap">
-												<img class="lazypreload lazyloaded" alt="Auto Cruitment" src="images/step-1.png">
-												<img src="<?php get_template_directory_uri()?>./images/up-arrow.png" class="uparrow-position">
-											</div>
-											<p>Complete our sign up form, our platform is secure and we will only use your information to match you to a Clinical Trial.</p>								
-										</div>
-									</div>
-									<div class="col-lg-3 col-sm-6">
-										<div class="img-outer">
-											<div class="img-wrap">
-												<img class="lazypreload lazyloaded" alt="Auto Cruitment" src="images/step-2.png">
-												<img src="images/down-arrow.png" class="downarrow-position">
-											</div>
-											<p>Our sign up form will ask some questions about your health, this allows us to match you to a Clinical Trial.</p>								
-										</div>
-									</div>
-									<div class="col-lg-3 col-sm-6">
-										<div class="img-outer">
-											<div class="img-wrap">
-												<img class="lazypreload lazyloaded" alt="Auto Cruitment" src="images/step-3.png">
-												<img src="images/up-arrow.png" class="uparrow-position">
-											</div>
-											<p>We will connect you with a Clinical Trial in your area.</p>
-										</div>
-									</div>
-									<div class="col-lg-3 col-sm-6">
-										<div class="img-outer">
-											<div class="img-wrap">
-												<img class="lazypreload lazyloaded" alt="Auto Cruitment" src="images/step-4.png">
-											</div>
-											<p>Become one of 100,000 Patients taking part in an AutoCruitment Verified Clinical Trial!</p>
-										</div>
-									</div>
+								<?php
 
+// Check rows exists.
+if( have_rows('process_section') ):
+ 
+    // Loop through rows.
+    while( have_rows('process_section') ) : the_row(); 
+
+        // Load sub field value.
+		$image = get_sub_field('process_image');
+        $content = get_sub_field('process_content'); 
+		?>
+									<div class="col-lg-3 col-sm-6">
+									
+										<div class="img-outer">
+											<div class="img-wrap">
+												<img class="lazypreload lazyloaded" alt="Auto Cruitment" src="<?php echo $image;?>">
+											
+											</div>
+											<p><?php echo $content;?></p>								
+										</div>
+										
+
+									</div>
+									
+									<?php
+							
+							endwhile;   
+								endif;
+?>
+									
 
 								</div>
 							</div>
@@ -132,77 +113,89 @@ Participants will receive compensation for participating in the study.</p>
 							<div class="container">
 								<div class="get-row">
 									<div class="left-cont">
-										<p>Take the next step to see if you qualify for local
-											<span>Pediatric Anemia Studies.</span></p>
-											<h3>Space is limited!</h3>
+										<p><?php the_field('next_step_content')?></p>
+											<h3><?php the_field('next_step_heading')?></h3>
 										</div>
 										<div class="right-cont">
-											<div class="qualify-red-btn"> <a href="#signup" class="qualifybtn btnscroll">Get Started – Click Here</a></div>
+											<div class="qualify-red-btn"> <a href="#signup" class="qualifybtn btnscroll"><?php the_field('next_step_text_button')?></a></div>
 										</div>
 									</div>
 								</div>
 							</section>
 
 	
-		
-		
-		<!-- FAQ Section -->
-		<section id="faq" class="container-fluid px-0 faq-bg">
+							
+
+<section id="faq" class="container-fluid px-12 faq-bg">
 			<div class="container">
 				<div class="row">
-					<h2 class="mainheading grey-color">Frequently Asked Questions</h2>
+					<h2 class="mainheading grey-color"><?php the_field('faq_heading') ?></h2>
 					<div class="faq-outer">
 						<div class="accordion" id="accordionExample">
-							<div class="card">
-								<div class="card-header" id="headingOne">
-									<h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is a clinical research study?  <span class="exp-icon"><i class="fas fa-plus-circle"></i></span></h5></div>
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-										<div class="card-body">
-											<p>A Clinical Research Study (also called a clinical trial) is a medical study that helps answer important questions about an investigational drug or device, such as: does it work, or how effective is it compared to another drug/device?
-<br><br>
-All medications must be tested in clinical research studies before they can be approved by regulatory authorities for doctors to prescribe to patients. Without people taking part in these studies, we would have no new treatments. The volunteers who participate in clinical research studies play a major role in helping to advance medicine.</p>
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingTwo">
-										<h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What can you expect from the Pediatric Anemia Studies?  <span class="exp-icon"><i class="fas fa-plus-circle"></i></span></h5></div>
-										<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-											<div class="card-body">
-												<p>The Pediatric Anemia Studies will include various visits to a study clinic in your area and follow up phone calls at designated times.
-<br><br>
-All study-related care is provided at no cost to you. You do not need health insurance to participate.
-<br><br>
-Volunteers who take part in the study may receive compensation for their time and travel. Participation is entirely voluntary. Even if you decide to take part in this study, you can change your mind about participating at any time.</p>
-											</div>
-										</div>
-									</div>
-									<div class="card">
-										<div class="card-header" id="headingThree">
-											<h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Is there a cost to participate?<span class="exp-icon"><i class="fas fa-plus-circle"></i></span></h5></div>
-											<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-												<div class="card-body">
-													<p>There is no cost to participate in the Pediatric Anemia Studies. If you qualify, the investigational drug, study-related tests, assessments, and visits will be provided to you at no cost. You will receive study-related care throughout the study from a team of professional doctors and nurses at no cost to you. </p>
-												</div> 
-											</div>
-										</div>
+						<?php
 
-										<div class="card">
-											<div class="card-header" id="headingFour">
-												<h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Will I be compensated for time and travel?<span class="exp-icon"><i class="fas fa-plus-circle"></i></span></h5>
-											</div>
-											<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-												<div class="card-body">
-													<p>Volunteers who take part in the studies may be compensated for their time and travel. Please discuss this with the study team when they contact you.</p>
-												</div>
+// Check rows exists.
+if( have_rows('faq_questions') ):
+ $count=1;
+    // Loop through rows.
+    while( have_rows('faq_questions') ) : the_row(); 
+
+        // Load sub field value.
+		$question = get_sub_field('faq_question');
+        $answer = get_sub_field('faq_answer'); ?>
+	
+								
+	<div class="card">
+<div class="card-header" id="heading<?php echo $count;?>">
+										<h5 class="mb-0
+										<?php 
+										if($count==1)
+									{ 
+										echo " ";
+									}
+									else{
+										echo "collapsed";
+										
+									}
+										?>
+										" data-toggle="collapse" data-target="#collapse<?php echo $count;?>" aria-expanded="<?php 
+									if($count==1)
+									{ 
+										echo true;
+									}
+									else{
+										echo false;
+									}
+								
+										 ?>" aria-controls="collapse<?php echo $count;?>"><?php echo $question;?> <span class="exp-icon"><i class="fas fa-plus-circle"></i></span></h5></div>
+										<div id="collapse<?php echo $count;?>" class="collapse <?php 
+									if($count==1)
+									{ 
+										echo "show";
+									}
+									?>" aria-labelledby="heading<?php echo $count;?>" data-parent="#accordionExample">
+											<div class="card-body">
+												<p><?php echo $answer;?></p>
 											</div>
 										</div>
+									</div>
+							
+
+								<?php
+								$count++;
+							endwhile;   
+								endif;
+?>
+
+
+								
+									
+										
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					<!-- FAQ Section - END -->
 
 
 		<!-- About Section -->
@@ -210,13 +203,11 @@ Volunteers who take part in the study may receive compensation for their time an
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="mainheading">About <span class="sub-head">Pediatric Anemia</span></h2>
+						<h2 class="mainheading"><?php the_field('about_pediatric_anemia_heading')?> </h2>
 					</div> 
 				</div>
 				<p class="text-lg-left m-0">
-					Low iron levels, fatigue (extreme tiredness/lack of energy) can affect the lives of children and teens. Extra iron can help their blood transport more oxygen around their body, which may help to improve their tiredness. 
-<br><br>
-Anemia develops whenever there is decreased production, increased destruction, or loss of red blood cells. Taking iron in tablet form is difficult, or impossible, for some children, and sometimes does not work as well as needed.</p>
+				<?php the_field('about_pediatric_anemia_content')?></p>
 				
 			</div>
 		</section>
@@ -224,121 +215,8 @@ Anemia develops whenever there is decreased production, increased destruction, o
 
 
 
-		<section id="last-step" class="">
-							<div class="container">
-								<div class="get-row">
-									<div class="left-cont">
-										<p>Thank you for considering participating in a
-											<span>Clinical Trial</span></p>
-											<h3>...and helping to advance medicine.</h3>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
+		
 						<!-- Footer Section -->
-
-						<footer class="site-footer">
-							<div class="container">
-								<div class="footerTop">
-									<div class="row">
-										<div class="col-md-3 footer-first"><a class="fottlogo" href="#bodyTop"><img class="footer-logo lazypreload lazyloaded" data-src="images/footer-logo.png" alt="Auto Cruitment" src="images/footer-logo.png"></a>
-											<p><strong>The Pediatric Anema Studies</strong> are evaluating an investigational treatment for children and teens who suffer from anemia.</p>
-										</div>
-										<div class="col-md-3">
-											<h3><span>LEGAL INFORMATION</span></h3>
-											<ul>
-												<li><a href="https://autocruitment.com/privacypolicy/" target="_blank">Privacy Policy</a></li>
-												<li><a href="https://autocruitment.com/privacynotice/" target="_blank">Privacy Notice</a></li>
-												<li><a href="https://autocruitment.com/privacynotice/#not-selling-info" target="_blank">Do Not Sell My Personal Information</a></li>
- <li><div id="consent-banner"></div>
-								<div id="teconsent">
-								  <script type="text/javascript" async="async" src="https://consent.trustarc.com/v2/notice/itimvc"></script>
-								</div>
-							</li>
-											</ul>
-										</div>
-										<div class="col-md-3">
-											<h3><span>Share This Study</span></h3>
-											<ul>
-												<li>
-													<a href="https://www.facebook.com/sharer/sharer.php?u=https://pediatric-anemia.autocruitment.com/" target="_blank">  <i class="fab fa-facebook-f"></i> Facebook
-													</a>
-												</li>
-												<li>
-													<a href="mailto:?subject=Look%20at%20this%20Website&amp;body=Hi, I saw this Research Study and thought you might be interested!%0D%0A%0D%0AA Clinical Study for Children & Teens Dealing with Anemia https://pediatric-anemia.autocruitment.com/"><i class="fas fa-envelope"></i> Email </a>
-												</li>
-												<li>
-													<a href="http://www.twitter.com/intent/tweet?url=https://pediatric-anemia.autocruitment.com/&amp;text=A Clinical Study for Children & Teens Dealing with Anemia" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-3">
-											<a href="https://autocruitment.com/" target="_blank"><img class="autocruitment-logo lazypreload lazyloaded" data-src="images/autocruitment-logo.svg" alt="Auto Cruitment" src="images/autocruitment-logo.svg"></a>
-											<p>AutoCruitment’s targeted direct-to-patient platform makes matching patients with the right clinical research trial studies in their area secure and easy.</p>
-										</div>
-									</div>
-								</div>
-								<a id="myBtn" class="back-to-top" alt="Go to top" title="Go to top" style="display: block;"> <i class="fas fa-chevron-up"></i> </a>
-								<div class="footerBottom">
-									<div class="row align-items-center copyrightAutocruitment m-0">
-										<div class="autollc">©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script>
-											document.write(new Date().getFullYear())
-										</script> AutoCruitment LLC</div>
-										<a href="https://seal.godaddy.com/verifySeal?sealID=ZzdPKtMxCLR83lXwPMivmC3h2xbLQkPp5sdUjltADiGhCiwy3Br9hxB25JzG" target="_blank"><img class="footer-logo go-secured lazypreload lazyloaded" alt="Auto Cruitment" src="images/godaddy-logo.png"></a>
-										<a href="#" target="_blank"><img class="footer-logo lazypreload lazyloaded" alt="Auto Cruitment" src="images/digicert-logo.png">
-											<a href="https://www.bbb.org/us/ga/atlanta/profile/clinical-trials/autocruitment-llc-0443-27959591#bbbseal" target="_blank"><img class="footer-logo lazypreload lazyloaded" alt="Auto Cruitment" src="images/bbb-logo.png">
-												<div class="text-right footer-bottom-right"></a>
-													<a href="https://autocruitment.com/" target="_blank">AutoCruitment</a>
-													<div class="followicons">
-														<a href="https://www.facebook.com/AutoCruitment/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-														<a href="https://twitter.com/autocruitment" target="_blank"><i class="fab fa-twitter"></i></a>
-														<a href="https://www.instagram.com/autocruitment/" target="_blank"><i class="fab fa-instagram"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</footer>
-								<!-- Footer Section - END -->
-								<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-								<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-								<script src="jquery/common.js"></script>
-								<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js" async></script>
-								<!--[if !IE]><!-->
-									<script>
-										if ( /*@cc_on!@*/ false) {
-											document.documentElement.className = 'ie10';
-										}
-									</script>
-									<!--<![endif]-->
-										<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77503550-5"></script>
-										<script>
-											window.dataLayer = window.dataLayer || [];
-											function gtag() {
-												dataLayer.push(arguments);
-											}
-											gtag('js', new Date());
-											gtag('config', 'UA-77503550-5');
-										</script>
-										<script async src='https://www.google-analytics.com/analytics.js'></script>
-										<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@3/js/iframeResizer.min.js"></script>
-										<script src="https://autocruitment.net/iframe.js"></script>
-										<script>
-											window.addEventListener('DOMContentLoaded', function() {
-												setupIframe('UA-77503550-2', 'embed', 'embed', 'https://trials.autocruitment.com/forms/iframe/PediatricAnemia_GWppPIND_FB/', {
-													hitType: 'event',
-													eventCategory: 'TrialSignUp',
-													eventAction: 'FormSubmit',
-													eventLabel: 'Success'
-												}, {
-													hitType: 'event',
-													eventCategory: 'TrialSignUp',
-													eventAction: 'FormSubmit',
-													eventLabel: 'Fail'
-												});
-											});
-										</script>
-										<script type="application/ld+json">{"@context":"http://schema.org/","@type":"WebSite","name":"Pediatric Anemia Clinical Trial | AutoCruitment","alternateName":"AutoCruitment","url":"https://pediatric-anemia.autocruitment.com/"}</script>
-									</body>
-									</html>
+<?php
+get_footer();
+?>
